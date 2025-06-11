@@ -1,61 +1,151 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.container {
-  width: 50%;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+header {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-label {
-  display: block;
-  margin-bottom: 10px;
+h1 {
+    color: #333;
 }
 
-input[type="text"], input[type="email"] {
-  width: 100%;
-  height: 40px;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.faculty-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
 }
 
-select {
-  width: 100%;
-  height: 40px;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.faculty-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 280px;
+    transition: transform 0.3s ease-in-out;
 }
 
-textarea {
-  width: 100%;
-  height: 100px;
-  margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.faculty-card:hover {
+    transform: translateY(-5px);
 }
 
-input[type="submit"] {
-  width: 100%;
-  height: 40px;
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.faculty-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #007bff;
 }
 
-input[type="submit"]:hover {
-  background-color: #3e8e41;
+.faculty-card h3 {
+    margin-top: 0;
+    color: #007bff;
 }
+
+.faculty-card .department {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.faculty-card .description {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+.contact-form-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    display: none; /* Initially hidden */
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.contact-form .close-form-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .close-form-button:hover {
+    background-color: #c82333;
+  }
